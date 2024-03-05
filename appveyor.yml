@@ -11,12 +11,6 @@ platform:
   - x64
 build: off
 install:
-  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-  - source ~/.nvm/nvm.sh
-  - export N_PREFIX="$HOME/.n"
-  - npm install -g n
-  - n 18
-  - nvm use 18
   - npm install -g npm@6
   - npm install --save-dev eslint eslint-plugin-jest@latest
   - npm install --save-dev @babel/core @babel/cli @babel/preset-env
