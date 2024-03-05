@@ -5,7 +5,7 @@ branches:
       - master
 cache: node_modules
 environment:
-  nodejs_version: "16"
+  nodejs_version: "20.11.1"
 platform:
   - x64
 build: off
