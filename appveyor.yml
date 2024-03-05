@@ -4,6 +4,8 @@ branches:
   only:
       - master
 cache: node_modules
+environment:
+  nodejs_version: "16"
 platform:
   - x64
 build: off
