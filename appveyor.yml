@@ -2,7 +2,7 @@ image: Ubuntu1804
 stack: node 12
 branches:
   only:
-      - master
+    - master
 cache: node_modules
 environment:
   matrix:
@@ -13,10 +13,8 @@ build: off
 install:
   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
   - source ~/.nvm/nvm.sh
-  
-  - nvm install 18
-  - nvm use 18
-
+  - npm install -g n
+  - n 18
   - npm install -g npm@6
 test_script:
-- npm run lint && npm test
+  - npm run lint && npm test
