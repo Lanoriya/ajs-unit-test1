@@ -6,7 +6,7 @@ branches:
 cache: node_modules
 environment:
   matrix:
-    - nodejs_version: "20.11.1"
+    - nodejs_version: "18"
 platform:
   - x64
 build: off
@@ -14,8 +14,8 @@ install:
   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
   - source ~/.nvm/nvm.sh
   
-  - nvm install 20.11.1
-  - nvm use 20.11.1
+  - nvm install 18
+  - nvm use 18
 
   - npm install -g npm@latest
 test_script:
