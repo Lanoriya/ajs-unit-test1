@@ -10,7 +10,7 @@ platform:
   - x64
 build: off
 install:
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node 20.11.1
   - npm install -g npm@latest
 test_script:
 - npm run lint && npm test # скрипт сборки
