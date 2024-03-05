@@ -17,7 +17,7 @@ install:
   - npm install -g n
   - n 18
   - npm install -g npm@6
-  - npm install --save-dev eslint eslint-plugin-jest
+  - npm install --save-dev eslint eslint-plugin-jest@latest
   - npm install --save-dev @babel/core @babel/cli @babel/preset-env
 test_script:
   - npm run lint && npm test
