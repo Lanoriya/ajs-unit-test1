@@ -17,5 +17,6 @@ install:
   - npm install -g n
   - n 18
   - npm install -g npm@6
+  - npm install -g eslint
 test_script:
   - npm run lint && npm test
