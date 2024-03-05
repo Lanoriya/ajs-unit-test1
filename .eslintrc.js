@@ -11,10 +11,12 @@ module.exports = {
     parserOptions: {
       ecmaVersion: 2020,
     },
-    rules: {
+    rules: {},
+    plugins: ['jest'],
+    settings: {
+      jest: {
+        version: '29', // Версия Jest, установленная в вашем проекте
+      },
     },
-    plugins: [
-      'jest',
-    ],
   };
   
